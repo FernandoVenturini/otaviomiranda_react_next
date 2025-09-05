@@ -1,33 +1,34 @@
+import { Heading } from "./components/Heading";
+import { Container } from "./components/Container";
+import { Logo } from "./components/Logo";
+
 import "./styles/theme.css";
 import "./styles/global.css";
-import { Container } from "./components/Container";
 
 export function App() {
   return (
     <>
-        <Container>
-          <section>
-            LOGO
-          </section>
-        </Container>
+      <Container>
+        <Logo />
+      </Container>
 
-        <Container>
-          <section>
-            MENU
-          </section>
-        </Container>
+      <Container>
+        <Heading>
+          MENU
+        </Heading>
+      </Container>
 
-        <Container>
-          <section>
-            FORM
-          </section>
-        </Container>
+      <Container>
+        <Heading>
+          FORM
+        </Heading>
+      </Container>
 
-        <Container>
-          <section>
-            FOOTER
-          </section>
-        </Container>
+      <Container>
+        <Heading>
+          FOOTER
+        </Heading>
+      </Container>
     </>
   );
 }
