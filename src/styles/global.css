@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    
+    font-family: 'Courier New', Courier, monospace;
 }
 
 html {
@@ -10,9 +11,23 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: 'Courier New', Courier, monospace;
     background-color: var(--gray-900);
     color: var(--text-default);
     line-height: 1.6;
 }
 
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.formRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    flex-direction: column;
+}
