@@ -1,3 +1,12 @@
 .button {
-    
+    border: none;
+    background: var(--primary);
+    color: var(--text-over-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24rem;
+    cursor: pointer;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
 }
