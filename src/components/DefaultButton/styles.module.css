@@ -16,6 +16,7 @@
     padding: 0.8rem;
     border-radius: 0.8rem;
     margin: 4.8rem 0;
+<<<<<<< HEAD
     transform: all 0.1s ease-in-out;
 }
 
@@ -38,3 +39,26 @@
     color: var(--text-over-error);
 }
 
+=======
+    transition: all 0.1s ease-in-out;
+}
+
+.button svg {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+.button:hover {
+    filter: brightness(80%);
+}
+
+.green {
+    background-color: var(--primary);
+    color: var(--text-over-primary);
+}
+
+.red {
+    background-color: var(--error);
+    color: var(--text-over-error);
+}
+>>>>>>> c7f3d88 (insering dark theme #36)
