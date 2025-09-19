@@ -11,7 +11,7 @@ export function Menu() {
   });
 
   const nextThemeIcon = {
-	dark: <SunIcon />,
+	dark: <SunIcon />,	
 	light: <MoonIcon />,
   };
 
