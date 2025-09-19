@@ -3,8 +3,16 @@
     align-items: center;
     justify-content: center;
     gap: 1.6rem;
+<<<<<<< HEAD
     padding: 1rem;
     background-color: var(--gray-900);
+=======
+    background: var(--gray-800);
+    padding: 1.2rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+>>>>>>> 0fa8ad1 (Your local changes)
 }
 
 .menuLink {
@@ -14,14 +22,30 @@
     text-decoration: none;
     background: var(--primary);
     color: var(--text-over-primary);
+<<<<<<< HEAD
     transition: all 0.3s ease-in-out;
+=======
+    transition: all 0.2s ease-in-out;
+>>>>>>> 0fa8ad1 (Your local changes)
     padding: 1.2rem;
     border-radius: 0.8rem;
+    border: 2px solid transparent;
 }
 
 .menuLink:hover {
+<<<<<<< HEAD
     filter: brightness(80%);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+=======
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(13, 161, 112, 0.3);
+    border-color: var(--primary-light);
+}
+
+.menuLink:active {
+    transform: translateY(0);
+>>>>>>> 0fa8ad1 (Your local changes)
 }
 
 .menuLink svg {

@@ -1,6 +1,10 @@
 import { HouseIcon, HistoryIcon, SettingsIcon, SunIcon, MoonIcon } from "lucide-react";
 import styles from "./styles.module.css";
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
+=======
+import { useState, useEffect } from "react";
+>>>>>>> 0fa8ad1 (Your local changes)
 
 type AvailableThemes = "dark" | "light";
 
@@ -20,12 +24,20 @@ export function Menu() {
   ) {
     event.preventDefault();
 
-    setTheme(prevTheme => {
-      const newTheme = prevTheme === 'dark' ? 'light' : 'dark';
+    setTheme((prevTheme) => {
+      const newTheme = prevTheme === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", newTheme);
       return newTheme;
     });
+  }
 
+<<<<<<< HEAD
   };
+=======
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+>>>>>>> 0fa8ad1 (Your local changes)
 
   useEffect(() => {
 	document.documentElement.setAttribute('data-theme', theme);
