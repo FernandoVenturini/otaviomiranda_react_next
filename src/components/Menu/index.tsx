@@ -1,22 +1,24 @@
-import { HouseIcon, HistoryIcon, SettingsIcon, SunIcon, MoonIcon } from "lucide-react";
+import {
+  HouseIcon,
+  HistoryIcon,
+  SettingsIcon,
+  SunIcon,
+  MoonIcon,
+} from "lucide-react";
 import styles from "./styles.module.css";
-<<<<<<< HEAD
-import { useEffect, useState } from "react";
-=======
 import { useState, useEffect } from "react";
->>>>>>> 0fa8ad1 (Your local changes)
 
 type AvailableThemes = "dark" | "light";
 
 export function Menu() {
   const [theme, setTheme] = useState<AvailableThemes>(() => {
-	const savedTheme = localStorage.getItem('theme') as AvailableThemes | null;
-	return savedTheme ? savedTheme : 'dark';
+    const savedTheme = localStorage.getItem("theme") as AvailableThemes | null;
+    return savedTheme ? savedTheme : "dark";
   });
 
   const nextThemeIcon = {
-	dark: <SunIcon />,	
-	light: <MoonIcon />,
+    dark: <SunIcon />,
+    light: <MoonIcon />,
   };
 
   function handleThemeChange(
@@ -27,22 +29,15 @@ export function Menu() {
     setTheme((prevTheme) => {
       const newTheme = prevTheme === "dark" ? "light" : "dark";
       document.documentElement.setAttribute("data-theme", newTheme);
+      localStorage.setItem("theme", newTheme);
       return newTheme;
     });
   }
 
-<<<<<<< HEAD
-  };
-=======
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
   }, [theme]);
->>>>>>> 0fa8ad1 (Your local changes)
-
-  useEffect(() => {
-	document.documentElement.setAttribute('data-theme', theme);
-	localStorage.setItem('theme', theme); // Armazena a preferencia do usuario no localStorage.
-  }, [theme]); // So e e executado quando o tema mudar.
 
   return (
     <>

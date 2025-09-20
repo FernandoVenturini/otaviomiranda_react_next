@@ -36,10 +36,7 @@
 .red {
     background: var(--error);
     color: var(--text-over-error);
-<<<<<<< HEAD
     transition: all 0.1s ease-in-out;
-=======
->>>>>>> 0fa8ad1 (Your local changes)
 }
 
 .button svg {
