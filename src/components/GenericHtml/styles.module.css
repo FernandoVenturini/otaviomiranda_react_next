@@ -3,9 +3,19 @@
     margin-bottom: 1.6rem;
 }
 
+.genericHtml h1 {
+    font-size: 3.2rem;
+    margin-bottom: 1.6rem;
+}
+
 .genericHtml h2 {
     font-size: 2.4rem;
     margin-bottom: 1.2rem;
+}
+
+.genericHtml h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .genericHtml p {
