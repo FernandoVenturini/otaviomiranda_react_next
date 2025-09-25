@@ -32,7 +32,7 @@ export function Menu() {
       localStorage.setItem("theme", newTheme);
       return newTheme;
     });
-  }
+  };
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -78,4 +78,4 @@ export function Menu() {
       </nav>
     </>
   );
-}
+};
