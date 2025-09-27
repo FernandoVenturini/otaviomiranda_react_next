@@ -2,10 +2,9 @@ import { DefaultButton } from "../DefaultButton";
 import { DefaultInput } from "../DefaultInput";
 import { Cycles } from "../Cycles";
 import { PlayCircleIcon } from "lucide-react";
-import type { HomeProps } from "../../pages/Home";
 
 
-export function MainForm({ state }: HomeProps) {
+export function MainForm() {
   return (
 	<div>
 		<form className="form" action="">
