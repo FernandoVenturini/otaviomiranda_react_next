@@ -3,6 +3,10 @@ import { CountDown } from "../../components/CountDown";
 import { MainForm } from "../../components/MainForm";
 import MainTemplate from "../../templates/MainTemplate";
 
+type HomeProps = {
+	state: 
+}
+
 export function Home() {
 
 	return (
