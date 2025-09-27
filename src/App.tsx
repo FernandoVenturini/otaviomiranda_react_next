@@ -8,23 +8,11 @@ import type { TaskStateModel } from './models/TaskStateModel';
 //import { AboutPomodoro } from './pages/AboutPomodoro';
 
 
-// export type TaskStateModel = {
-//   tasks: TaskModel[];
-//   secondsRemaining: number;
-//   formattedSecondsRemaining: string;
-//   activeTask: number;
-//   config: {
-//     workTime: number;
-//     shortBreakTime: number;
-//     longBreakTime: number;
-//   };
-// };
-
 const initialState: TaskStateModel = {
   tasks: [],
   secondsRemaining: 0,
   formattedSecondsRemaining: '00:00',
-  activeTask: 0,
+  activeTask: null,
   currentCycle: 0,
   config: {
     workTime: 25 * 60,
@@ -36,7 +24,7 @@ const initialState: TaskStateModel = {
 export function App() {
   const [state, setState] = useState(initialState);
   
-  return <Home/>;
+  return <Home state={state} setState={setState}/>;
 
 }
 
