@@ -5,7 +5,7 @@ import MainTemplate from "../../templates/MainTemplate";
 
 type HomeProps = {
 	state: 
-}
+};
 
 export function Home() {
 

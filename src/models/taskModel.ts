@@ -8,4 +8,4 @@ export type TaskModel = {
     completeDate: number | null;
     interruptDate: number | null;
     type: keyof TaskStateModel['config'];
-}
+};
