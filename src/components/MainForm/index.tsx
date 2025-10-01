@@ -5,9 +5,20 @@ import { PlayCircleIcon } from "lucide-react";
 
 
 export function MainForm() {
+	const {setState} = useTaskContext();
+
+	function handleClick() {
+		setState(prevState => {
+			return {
+				...prevState,
+				formattedSecondsRemaining: '25:00',
+			}
+		});
+	};
   return (
 	<div>
 		<form className="form" action="">
+			<button type="button" onClick={handleClick}>CLICAR</button>
           <div className="formRow">
             <DefaultInput 
               labelText="task"
